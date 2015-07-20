@@ -39,8 +39,8 @@ $("#dashboard-stats-sparkline4").sparkline([5,10,7,2,0,-4,-2,4,5,-6,-1.5,2.2,4.7
 	
 $("#dashboard-stats-sparkline5").sparkline([0,10,5,22,10,16,6,20,5,22], {
     type: 'line',
-    width: '130',
-    height: '70',
+    width: '70',
+    height: '40',
     lineColor: '#f25648',
     fillColor: false,
     lineWidth: 2,
