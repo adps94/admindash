@@ -41,11 +41,8 @@ Side by Side Bar
 
 $("#side-by-side-bar").dxChart({
     dataSource: [
-					{ state: "Illinois", year1998: 423.721, year2001: 476.851, year2004: 528.904 },
-					{ state: "Indiana", year1998: 178.719, year2001: 195.769, year2004: 227.271 },
-					{ state: "Michigan", year1998: 308.845, year2001: 335.793, year2004: 372.576 },
-					{ state: "Ohio", year1998: 348.555, year2001: 374.771, year2004: 418.258 },
-					{ state: "Wisconsin", year1998: 160.274, year2001: 182.373, year2004: 211.727 }
+					{ state: "EY Cochin", year1998: 22, year2001: 8, year2004: 30 },
+					{ state: "EY Trivandrum", year1998: 9, year2001: 11, year2004: 20 }
 				],
     commonSeriesSettings: {
         argumentField: "state",
@@ -273,15 +270,15 @@ Line Chart
 
 $("#line-chart").dxChart({
     dataSource: [
-		{ time: '10:20', europe: 5 },
-		{ time: '10:25', europe: 6 },
-		{ time: '10:30', europe: 6 },
-		{ time: '10:35', europe: 4 },
-		{ time: '10:40', europe: 1 },
+		{ time: '10:20', europe: 0 },
+		{ time: '10:25', europe: 0 },
+		{ time: '10:30', europe: 0 },
+		{ time: '10:35', europe: 0 },
+		{ time: '10:40', europe: 0 },
 		{ time: '10:45', europe: 0 },
-		{ time: '10:50', europe: 8 },
+		{ time: '10:50', europe: 3 },
 		{ time: '10:55', europe: 1 },
-		{ time: '11:00', europe: 4 },
+		{ time: '11:00', europe: 0 },
 		{ time: '11:05', europe: 0 },
 		{ time: '11:10', europe: 0 }
 	],
