@@ -57,8 +57,8 @@ $("#side-by-side-bar").dxChart({
     },
     series: [
         { valueField: "year2004", name: "2004", color: '#ff6c60' },
-        { valueField: "year2001", name: "2001", color: '#ff897f' },
-        { valueField: "year1998", name: "1998", color: '#ffa69f' }
+        { valueField: "year2001", name: "2001", color: '#2cc36b' },
+        { valueField: "year1998", name: "1998", color: '#3498db' }
     ],
     legend: {
         visible: false
