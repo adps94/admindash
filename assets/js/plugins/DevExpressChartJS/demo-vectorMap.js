@@ -66,7 +66,7 @@ var getPaletteIndex = function (percent) {
 $('#demo-map-1').dxVectorMap({
     mapData: DevExpress.viz.map.sources.world,
     bounds: [-180, 85, 180, -60],
-	zoomFactor: 2.5,
+	zoomFactor: null,
 	controlBar: {
 	enabled: false
 	},
@@ -194,7 +194,7 @@ var mapData2 = {
 
 $('#demo-map-2').dxVectorMap({
 	mapData: DevExpress.viz.map.sources.world,
-	zoomFactor: 4.25,
+	zoomFactor: null,
 	controlBar: {
 	enabled: false
 	},
