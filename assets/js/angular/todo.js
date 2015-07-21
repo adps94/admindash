@@ -1,5 +1,6 @@
-    function DashCtrl($scope, $http) {
-        $http({
+    function DashCtrl($scope, $http, $interval) {
+        $interval(function () {
+            $http({
                 method: 'GET',
                 url: 'https://api.parse.com/1/classes/userVisit',
                 headers: {
@@ -10,5 +11,7 @@
             })
             .success(function(successData) {
                 $scope.visitorList = successData.results;
-            });
+                $scope.visitors = $scope.visitorList.length;
+            });    
+        },10000);
     }

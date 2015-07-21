@@ -125,8 +125,7 @@
     </aside>
     <!-- Aside Ends-->
     <section class="content">
-                  <img src="assets/images/ey.jpg" class="img-circle" alt="..." style="  height: 97px;float: right;margin-right: 0;padding-right: 25px;">
-       
+        <img src="assets/images/ey.jpg" class="img-circle" alt="..." style="  height: 97px;float: right;margin-right: 0;padding-right: 25px;">
         <!-- <header class="top-head container-fluid">
             <button type="button" class="navbar-toggle pull-left">
                 <span class="sr-only">Toggle navigation</span>
@@ -291,7 +290,6 @@
         <div class="warper container-fluid">
             <div class="page-header">
                 <h1>MIHU <small>May I help you?</small></h1></div>
-            
             <div class="row">
                 <div class="col-lg-6">
                     <div class="panel panel-default" data-ng-controller="DashCtrl">
@@ -344,19 +342,21 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-ng-controller="DashCtrl">
                 <div class="col-md-3 col-sm-6">
                     <div class="panel panel-default clearfix dashboard-stats rounded">
                         <span id="dashboard-stats-sparkline1" class="sparkline transit"></span>
-                        <p class="text-muted transit" style="margin-bottom:0px;">Last week visitors</p>
+                        <p class="text-muted transit" style="margin-bottom:0px;">Visitors this week</p>
                         <i class="fa fa-user bg-danger transit stats-icon" style="color:#FFE600"></i>
-                        <h3 class="transit" style="margin:8px 0px 8px 0px;">24</h3> <small class="text-green" style="margin:0px;"><i class="fa fa-caret-up"></i> 90% of previous week</small>
+                        <h3 class="transit" style="margin:8px 0px 8px 0px;"> {{ visitors }}</h3>
+                        <h3 class="transit" style="margin:8px 0px 8px 0px;" ng-if="!visitors"> 0</h3>
+                        <small class="text-green" style="margin:0px;"><i class="fa fa-caret-up"></i> 90% of previous week</small>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="panel panel-default clearfix dashboard-stats rounded">
                         <span id="dashboard-stats-sparkline2" class="sparkline transit"></span>
-                        <p class="text-muted transit" style="margin-bottom:0px;">Last month visitors</p>
+                        <p class="text-muted transit" style="margin-bottom:0px;">Visitors this month</p>
                         <i class="fa fa-calendar-o bg-danger transit stats-icon" style="color:#FFE600"></i>
                         <h3 class="transit" style="margin:8px 0px 8px 0px;">63</h3> <small class="text-green" style="margin:0px;"><i class="fa fa-caret-up"></i> 80% of previous month</small>
                     </div>
@@ -378,7 +378,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="middle">
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="col-lg-12">
@@ -394,9 +394,9 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <div id="side-by-side-bar" style="height:250px;"></div>
-                            <div style="height:10px;width:10px;background:#3F85A9;  display: inline-table;"></div> Total Visitors&nbsp&nbsp  
-                            <div style="height:10px;width:10px;background:#51E0C5;  display: inline-table;"></div> Official visits&nbsp&nbsp  
-                            <div style="height:10px;width:10px;background:#48CA8A;  display: inline-table;"></div> Unofficial visits 
+                            <div style="height:10px;width:10px;background:#3F85A9;  display: inline-table;"></div> Total Visitors&nbsp&nbsp
+                            <div style="height:10px;width:10px;background:#51E0C5;  display: inline-table;"></div> Official visits&nbsp&nbsp
+                            <div style="height:10px;width:10px;background:#48CA8A;  display: inline-table;"></div> Unofficial visits
                         </div>
                     </div>
                 </div>
@@ -435,7 +435,6 @@
     <!-- For Demo Charts -->
     <script src="assets/js/plugins/DevExpressChartJS/demo-charts.js"></script>
     <script src="assets/js/plugins/DevExpressChartJS/demo-vectorMap.js"></script>
-
     <script src="assets/js/google-maps/googlemap-conf.js"></script>
     <!-- Sparkline JS -->
     <script src="assets/js/plugins/sparkline/jquery.sparkline.min.js"></script>
