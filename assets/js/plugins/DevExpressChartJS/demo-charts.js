@@ -41,11 +41,11 @@ Side by Side Bar
 
 $("#side-by-side-bar").dxChart({
     dataSource: [
-					{ state: "Illinois", year1998: 423.721, year2001: 476.851, year2004: 528.904 },
-					{ state: "Indiana", year1998: 178.719, year2001: 195.769, year2004: 227.271 },
-					{ state: "Michigan", year1998: 308.845, year2001: 335.793, year2004: 372.576 },
-					{ state: "Ohio", year1998: 348.555, year2001: 374.771, year2004: 418.258 },
-					{ state: "Wisconsin", year1998: 160.274, year2001: 182.373, year2004: 211.727 }
+					{ state: "Department 1", year1998: 6, year2001: 18, year2004: 24 },
+					{ state: "Department 2", year1998: 9, year2001: 21, year2004: 30 },
+					{ state: "Department 3", year1998: 3, year2001: 12, year2004: 15 },
+					{ state: "Department 4", year1998: 4, year2001: 16, year2004: 20 },
+					{ state: "Department 5", year1998: 12, year2001:28, year2004: 40 }
 				],
     commonSeriesSettings: {
         argumentField: "state",
@@ -59,9 +59,9 @@ $("#side-by-side-bar").dxChart({
         }
     },
     series: [
-        { valueField: "year2004", name: "2004", color: '#ff6c60' },
-        { valueField: "year2001", name: "2001", color: '#2cc36b' },
-        { valueField: "year1998", name: "1998", color: '#3498db' }
+        { valueField: "year2004", name: "2004", color: '#3F85A9' },
+        { valueField: "year2001", name: "2001", color: '#51E0C5' },
+        { valueField: "year1998", name: "1998", color: '#48CA8A' }
     ],
     legend: {
         visible: false
@@ -273,25 +273,25 @@ Line Chart
 
 $("#line-chart").dxChart({
     dataSource: [
-		{ year: 1950, europe: 546, americas: 332, africa: 227 },
-		{ year: 1960, europe: 605, americas: 417, africa: 283 },
-		{ year: 1970, europe: 656, americas: 513, africa: 361 },
-		{ year: 1980, europe: 694, americas: 614, africa: 471 },
-		{ year: 1990, europe: 721, americas: 721, africa: 623 },
-		{ year: 2000, europe: 730, americas: 836, africa: 797 },
-		{ year: 2010, europe: 728, americas: 935, africa: 982 },
-		{ year: 2020, europe: 721, americas: 1027, africa: 1189 },
-		{ year: 2030, europe: 704, americas: 1110, africa: 1416 },
-		{ year: 2040, europe: 680, americas: 1178, africa: 1665 },
-		{ year: 2050, europe: 650, americas: 1231, africa: 1937 }
+		{ year: '9:30', europe: 1, americas: 332, africa: 227 },
+		{ year: '10', europe: 0, americas: 417, africa: 283 },
+		{ year: '11', europe: 0, americas: 513, africa: 361 },
+		{ year: '12', europe: 0, americas: 614, africa: 471 },
+		{ year: '1:30', europe: 0, americas: 721, africa: 623 },
+		{ year: '2', europe: 2, americas: 836, africa: 797 },
+		{ year: '3', europe: 0, americas: 935, africa: 982 },
+		{ year: '4', europe: 0, americas: 1027, africa: 1189 },
+		{ year: '5', europe: 5, americas: 1110, africa: 1416 },
+		{ year: '6:20', europe: 0, americas: 1178, africa: 1665 },
+		{ year: '7', europe: 0, americas: 1231, africa: 1937 }
 	],
     commonSeriesSettings: {
         argumentField: "year"
     },
     series: [
-        { valueField: "europe", name: "Europe", color: "#27c24c" },
-        { valueField: "americas", name: "Americas", color: "#fad733" },
-        { valueField: "africa", name: "Africa", color: "#f05050" }
+        { valueField: "europe", name: "Europe", color: "#27c24c" }
+        // { valueField: "americas", name: "Americas", color: "#fad733" },
+        // { valueField: "africa", name: "Africa", color: "#f05050" }
     ],
     tooltip:{
         enabled: true,
@@ -399,7 +399,7 @@ $("#pie-chart").dxPieChart({
     legend: {
         visible: false
     },
-    palette: ["#6bb802", "#7c37c3", "#0861ce", "#fbd005", "#4fcdfc", "#00b19d"],
+    palette: ["#fbd005", "#808080", "#8C8C8C", "#A6A6A6", "#BBBCBD", "#CED0D2"],
     series: [{
         argumentField: "visitors",
         valueField: "count",
