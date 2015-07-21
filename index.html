@@ -127,7 +127,7 @@
     <!-- Aside Ends-->
 
     <section class="content">
-        <header class="top-head container-fluid">
+        <!-- <header class="top-head container-fluid">
             <button type="button" class="navbar-toggle pull-left">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -286,7 +286,7 @@
                     </div>
                 </li>
             </ul>
-        </header>
+        </header> -->
         <!-- Header Ends -->
         <div class="warper container-fluid">
  	
@@ -297,67 +297,71 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="panel panel-default clearfix dashboard-stats rounded">
                         <span id="dashboard-stats-sparkline1" class="sparkline transit"></span>
-                        <i class="fa fa-shopping-cart bg-danger transit stats-icon"></i>
-                        <h3 class="transit">1547 <small class="text-green"><i class="fa fa-caret-up"></i> 8%</small></h3>
-                        <p class="text-muted transit">Last week sales</p>
+                        <p class="text-muted transit" style="margin-bottom:0px;">Last week visitors</p>
+                        <i class="fa fa-user bg-danger transit stats-icon" style="color:#FFE600"></i>
+                        <h3 class="transit" style="margin:8px 0px 8px 0px;">24</h3> <small class="text-green" style="margin:0px;"><i class="fa fa-caret-up"></i> 8% of previous week</small>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="panel panel-default clearfix dashboard-stats rounded">
                         <span id="dashboard-stats-sparkline2" class="sparkline transit"></span>
-                        <i class="fa fa-tags bg-info transit stats-icon"></i>
-                        <h3 class="transit">91% <small class="text-red"><i class="fa fa-caret-down"></i> 6%</small></h3>
-                        <p class="text-muted transit">Transactions</p>
+                        <p class="text-muted transit" style="margin-bottom:0px;">Last month visitors</p>
+                        <i class="fa fa-calendar bg-danger transit stats-icon" style="color:#FFE600"></i>
+                        <h3 class="transit" style="margin:8px 0px 8px 0px;">24</h3> <small class="text-green" style="margin:0px;"><i class="fa fa-caret-up"></i> 5% of previous month</small>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="panel panel-default clearfix dashboard-stats rounded">
                         <span id="dashboard-stats-sparkline3" class="sparkline transit"></span>
-                        <i class="fa fa-user bg-success transit stats-icon"></i>
-                        <h3 class="transit">2,014 <small class="text-green"><i class="fa fa-caret-up"></i> 9%</small></h3>
-                        <p class="text-muted transit">Total Users</p>
+                        <p class="text-muted transit" style="margin-bottom:0px;">Last week visitors</p>
+                        <i class="fa fa-shopping-cart bg-danger transit stats-icon"></i>
+                        <h3 class="transit" style="margin:8px 0px 8px 0px;">24</h3> <small class="text-green" style="margin:0px;"><i class="fa fa-caret-up"></i> 8% of previous week</small>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="panel panel-default clearfix dashboard-stats rounded">
-                        <span id="dashboard-stats-sparkline4" class="sparkline transit"></span>
-                        <i class="fa fa-warning bg-warning transit stats-icon"></i>
-                        <h3 class="transit">-344 <small class="text-red"><i class="fa fa-caret-down"></i> 20%</small></h3>
-                        <p class="text-muted transit">Churned Users</p>
+                        <span id="dashboard-stats-sparkline" class="sparkline transit"></span>
+                        <p class="text-muted transit" style="margin-bottom:0px;">Last week visitors</p>
+                        <i class="fa fa-shopping-cart bg-danger transit stats-icon"></i>
+                        <h3 class="transit" style="margin:8px 0px 8px 0px;">24</h3> <small class="text-green" style="margin:0px;"><i class="fa fa-caret-up"></i> 8% of previous week</small>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-6">
                     <div class="panel panel-default" data-ng-controller="DashCtrl">
-                        <div class="panel-heading un-bold">
+                        <div class="panel-heading un-bold" style="padding-top:4px;padding-bottom:4px;">
                             <h4>Vistors</h4>
                         </div>
                         <div class="panel-body">
-                            <ul class="list-group no-margn nicescroll todo-list" style="height:205px; overflow:auto;">
+                            <ul class="list-group no-margn nicescroll todo-list" style="height:235px; overflow:auto;">
                                 <li data-ng-repeat="visitor in visitorList" class="list-group-item">
                                     <span>{{ visitor.visitorName }} - {{ visitor.purposeOfVisit }}</span>
                                 </li>
                             </ul>
-                            <div class="row" style="height:110px;background:#ECECEC;padding:10px">
+                            <div class="row" style="height:77px;background:#ECECEC;padding:4px">
                                 <div class="col-md-8">
+                                  <a href="#middle">
+                                  <h4 style="padding-top:12px;">Visitior Analytics</h4>
+                                  </a>
                                 </div>
-                                <div class="col-md-4 text-center" style="border-left:1px solid white">
-                                    <h5 class="no-margn"><strong>No.of visitors</strong></h5>
-                                    <p class="text-muted"><small>total 1,248</small></p>
+                                <div class="col-md-4 text-center" style="border-left:1px solid rgb(157, 158, 165">
+                                    <!-- <h5 class="no-margn"><strong>No.of visitors</strong></h5>
+                                    <p class="text-muted"><small>total 1,248</small></p> -->
                                     
-                                    <div id="dashboard-stats-sparkline5"></div>
+                                    <div id="dashboard-stats-sparkline6"></div>
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-6">
                     <div class="panel panel-default">
-                        <div class="panel-heading clean">
+                        <div class="panel-heading clean" style="font-size:21px;padding-bottom:0px;">
                             EY Global
                         </div>
-                        <div class="panel-body" id="demo-map-2" style="height:350px;">
+                        <div class="panel-body" id="demo-map-2" style="height:350px;padding-top:8px;">
                         </div>
                     </div>
                 </div>
@@ -368,16 +372,15 @@
                         <div class="col-lg-6">
                             <div class="panel panel-default">
                                 <div class="panel-body text-center">
-                                    
+                                  <div id="pie-chart" style="height:250px;"></div>
+                  
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="panel panel-default">
                                 <div class="panel-body text-center">
-                                    <h5 class="no-margn"><strong>Sessions Count</strong></h5>
-                                    <p class="text-muted"><small>total 153,248</small></p>
-                                    <div id="dashboard-stats-sparkline6"></div>
+                                    <div id="bubble-chart" style="height:250px;"></div>
                                 </div>
                             </div>
                         </div>
