@@ -289,8 +289,8 @@
         <!-- Header Ends -->
         <div class="warper container-fluid">
             <div class="page-header">
-                <h1>MIHU <small>May I help you?</small>  <span class="dropdown" style="float:right;margin-right:140px;width:400px;">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:400px;">
+                <h1>MI<span style="color:#EDD602;">HU</span> <small>May I help you?</small>  <span class="dropdown" style="float:right;margin-right:844px;width:400px;">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:400px;height:48px;">
                         EY Kinfra
                         <span style="float:right;margin-top:10px;" class="caret"></span>
                     </button>
@@ -361,7 +361,7 @@
                         <i class="fa fa-user bg-danger transit stats-icon" style="color:#FFE600"></i>
                         <h3 class="transit" style="margin:8px 0px 8px 0px;"> {{ visitors }}</h3>
                         <h3 class="transit" style="margin:8px 0px 8px 0px;" ng-if="!visitors"> 0</h3>
-                        <small class="text-green" style="margin:0px;"><i class="fa fa-caret-up"></i> 90% of previous week</small>
+                        <small class="text-green" style="margin:0px;"><i class="fa fa-caret-up"></i> 5% of previous week</small>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
@@ -396,9 +396,12 @@
                             <div class="panel panel-default">
                                 <div class="panel-body text-center" style="min-height:299px;">
                                     <div id="pie-chart" style="height:250px;"></div>
+                                     <div>Total number of visitors: 16</div>
                                 </div>
                             </div>
+
                         </div>
+
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -417,7 +420,9 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">Realtime visitor data</div>
                         <div class="panel-body">
-                            <div id="line-chart" style="height:250px;"></div>
+                            <div id="line-chart" style="height:250px;margin-bottom:10px;"></div>
+                            <div style="height:10px;width:10px;background:#27c24c;  display: inline-table;"></div> Today's Visitors&nbsp&nbsp
+                            <div style="height:10px;width:10px;background:#fad733;  display: inline-table;"></div> Expected Visitors&nbsp&nbsp
                         </div>
                     </div>
                 </div>

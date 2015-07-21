@@ -273,24 +273,24 @@ Line Chart
 
 $("#line-chart").dxChart({
     dataSource: [
-		{ year: '9:30', europe: 1, americas: 332, africa: 227 },
-		{ year: '10', europe: 0, americas: 417, africa: 283 },
-		{ year: '11', europe: 0, americas: 513, africa: 361 },
-		{ year: '12', europe: 0, americas: 614, africa: 471 },
-		{ year: '1:30', europe: 0, americas: 721, africa: 623 },
-		{ year: '2', europe: 2, americas: 836, africa: 797 },
-		{ year: '3', europe: 0, americas: 935, africa: 982 },
-		{ year: '4', europe: 0, americas: 1027, africa: 1189 },
-		{ year: '5', europe: 5, americas: 1110, africa: 1416 },
-		{ year: '6:20', europe: 0, americas: 1178, africa: 1665 },
-		{ year: '7', europe: 0, americas: 1231, africa: 1937 }
+		{ year: '9:30', europe: 1, americas: 0, africa: 227 },
+		{ year: '10', europe: 0, americas: 0, africa: 283 },
+		{ year: '11', europe: 0, americas: 2, africa: 361 },
+		{ year: '12', europe: 0, americas: 0, africa: 471 },
+		{ year: '1:30', europe: 0, americas: 1, africa: 623 },
+		{ year: '2', europe: 2, americas: 0, africa: 797 },
+		{ year: '3', europe: 0, americas: 0, africa: 982 },
+		{ year: '4', europe: 0, americas: 1, africa: 1189 },
+		{ year: '5', europe: 5, americas: 0, africa: 1416 },
+		{ year: '6:20', europe: 0, americas: 0, africa: 1665 },
+		{ year: '7', europe: 0, americas: 0, africa: 1937 }
 	],
     commonSeriesSettings: {
         argumentField: "year"
     },
     series: [
-        { valueField: "europe", name: "Europe", color: "#27c24c" }
-        // { valueField: "americas", name: "Americas", color: "#fad733" },
+        { valueField: "europe", name: "Europe", color: "#27c24c" },
+        { valueField: "americas", name: "Americas", color: "#fad733" }
         // { valueField: "africa", name: "Africa", color: "#f05050" }
     ],
     tooltip:{
