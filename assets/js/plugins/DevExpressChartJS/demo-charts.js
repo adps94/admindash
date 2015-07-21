@@ -41,11 +41,8 @@ Side by Side Bar
 
 $("#side-by-side-bar").dxChart({
     dataSource: [
-					{ state: "Illinois", year1998: 423.721, year2001: 476.851, year2004: 528.904 },
-					{ state: "Indiana", year1998: 178.719, year2001: 195.769, year2004: 227.271 },
-					{ state: "Michigan", year1998: 308.845, year2001: 335.793, year2004: 372.576 },
-					{ state: "Ohio", year1998: 348.555, year2001: 374.771, year2004: 418.258 },
-					{ state: "Wisconsin", year1998: 160.274, year2001: 182.373, year2004: 211.727 }
+					{ state: "EY Cochin", year1998: 22, year2001: 8, year2004: 30 },
+					{ state: "EY Trivandrum", year1998: 9, year2001: 11, year2004: 20 }
 				],
     commonSeriesSettings: {
         argumentField: "state",
@@ -273,25 +270,23 @@ Line Chart
 
 $("#line-chart").dxChart({
     dataSource: [
-		{ year: 1950, europe: 546, americas: 332, africa: 227 },
-		{ year: 1960, europe: 605, americas: 417, africa: 283 },
-		{ year: 1970, europe: 656, americas: 513, africa: 361 },
-		{ year: 1980, europe: 694, americas: 614, africa: 471 },
-		{ year: 1990, europe: 721, americas: 721, africa: 623 },
-		{ year: 2000, europe: 730, americas: 836, africa: 797 },
-		{ year: 2010, europe: 728, americas: 935, africa: 982 },
-		{ year: 2020, europe: 721, americas: 1027, africa: 1189 },
-		{ year: 2030, europe: 704, americas: 1110, africa: 1416 },
-		{ year: 2040, europe: 680, americas: 1178, africa: 1665 },
-		{ year: 2050, europe: 650, americas: 1231, africa: 1937 }
+		{ time: '10:20', europe: 0 },
+		{ time: '10:25', europe: 0 },
+		{ time: '10:30', europe: 0 },
+		{ time: '10:35', europe: 0 },
+		{ time: '10:40', europe: 0 },
+		{ time: '10:45', europe: 0 },
+		{ time: '10:50', europe: 3 },
+		{ time: '10:55', europe: 1 },
+		{ time: '11:00', europe: 0 },
+		{ time: '11:05', europe: 0 },
+		{ time: '11:10', europe: 0 }
 	],
     commonSeriesSettings: {
-        argumentField: "year"
+        argumentField: "time"
     },
     series: [
-        { valueField: "europe", name: "Europe", color: "#27c24c" },
-        { valueField: "americas", name: "Americas", color: "#fad733" },
-        { valueField: "africa", name: "Africa", color: "#f05050" }
+        { valueField: "europe", name: "Europe", color: "#27c24c" }
     ],
     tooltip:{
         enabled: true,
