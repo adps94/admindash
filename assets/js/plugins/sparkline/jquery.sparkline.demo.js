@@ -13,26 +13,26 @@ Sparklines on Dashboard
 $("#dashboard-stats-sparkline1").sparkline([5,10,7,2,0,-4,-2,4,5,-6,-1.5,2.2,4.7,-3.5,-0.7,-2,3.1,6], {
     type: 'bar',
     height: '60',
-    barColor: '#9D9EA5',
-    negBarColor: '#e9573f'});
+    barColor: '#6F7179',
+    negBarColor: '#F9E600'});
 	
 $("#dashboard-stats-sparkline2").sparkline([10,5,3,-6,5,3,-2,6,1,-4,-1.5,2.2,4.7,-3.5,-0.7,-2,3.1,6], {
     type: 'bar',
     height: '60',
-    barColor: '#9D9EA5',
-    negBarColor: '#e9573f'});
+    barColor: '#6F7179',
+    negBarColor: '#F9E600'});
 	
 $("#dashboard-stats-sparkline3").sparkline([5,10,7,2,0,-4,-2,4,5,-6,-1.5,2.2,4.7,-3.5,-0.7,-2,3.1,6], {
     type: 'bar',
     height: '60',
-    barColor: '#9D9EA5',
-    negBarColor: '#e9573f'});
+    barColor: '#6F7179',
+    negBarColor: '#F9E600'});
 	
 $("#dashboard-stats-sparkline4").sparkline([5,10,7,2,0,-4,-2,4,5,-6,-1.5,2.2,4.7,-3.5,-0.7,-2,3.1,6], {
     type: 'bar',
     height: '60',
-    barColor: '#9D9EA5',
-    negBarColor: '#e9573f'});
+    barColor: '#6F7179',
+    negBarColor: '#F9E600'});
 	
 	
 	
@@ -67,8 +67,8 @@ $("#dashboard-stats-sparkline6").sparkline([5,10,7,2,0,-4,-2,4,5,-6,-1.5,2.2,4.7
 $("#table-sparkline1").sparkline([5,6,7,2,0,-4,-2,4], {
     type: 'bar',
     zeroAxis: false,
-    barColor: '#e9573f',
-    negBarColor: '#e9573f'});
+    barColor: '#F9E600',
+    negBarColor: '#F9E600'});
 	
 	
 	
