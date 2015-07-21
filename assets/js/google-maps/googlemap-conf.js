@@ -13,7 +13,7 @@ function initialize() {
         new google.maps.Size(40, 37),
         new google.maps.Point(0, 0),
         new google.maps.Point(12, 35));
-    var image = '/assets/images/mark.png';
+    var image = 'assets/images/test.png';
     var stylemap=[
     {
         "featureType": "landscape",
@@ -167,6 +167,7 @@ function initialize() {
         mapTypeControl: false,
         scaleControl: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
+        disableDefaultUI: true,
         styles : stylemap
     });
 
@@ -177,8 +178,9 @@ function initialize() {
     for (i = 0; i < locations.length; i++) {
         marker = new google.maps.Marker({
             position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-            icon: pinImage,
-            shadow: pinShadow,
+            /*icon: pinImage,
+            shadow: pinShadow,*/
+            icon:image,
             map: map
         });
 
