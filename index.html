@@ -125,8 +125,7 @@
     </aside>
     <!-- Aside Ends-->
     <section class="content">
-                  <img src="assets/images/ey.jpg" class="img-circle" alt="..." style="  height: 97px;float: right;margin-right: 0;padding-right: 25px;">
-       
+        <img src="assets/images/ey.jpg" class="img-circle" alt="..." style="  height: 97px;float: right;margin-right: 0;padding-right: 25px;">
         <!-- <header class="top-head container-fluid">
             <button type="button" class="navbar-toggle pull-left">
                 <span class="sr-only">Toggle navigation</span>
@@ -290,8 +289,18 @@
         <!-- Header Ends -->
         <div class="warper container-fluid">
             <div class="page-header">
-                <h1>MIHU <small>May I help you?</small></h1></div>
-            
+                <h1>MIHU <small>May I help you?</small>  <span class="dropdown" style="float:right;margin-right:140px;width:400px;">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:400px;">
+                        EY Kinfra
+                        <span style="float:right;margin-top:10px;" class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" style="width:400px;" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">EY Kinfra</a></li>
+                        <li><a href="#">EY Thejaswini</a></li>
+                        <li><a href="#">EY Cochin</a></li>
+                    </ul>
+                </span></h1>
+            </div>
             <div class="row">
                 <div class="col-lg-6">
                     <div class="panel panel-default" data-ng-controller="DashCtrl">
@@ -394,9 +403,9 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <div id="side-by-side-bar" style="height:250px;"></div>
-                            <div style="height:10px;width:10px;background:#3F85A9;  display: inline-table;"></div> Total Visitors&nbsp&nbsp  
-                            <div style="height:10px;width:10px;background:#51E0C5;  display: inline-table;"></div> Official visits&nbsp&nbsp  
-                            <div style="height:10px;width:10px;background:#48CA8A;  display: inline-table;"></div> Unofficial visits 
+                            <div style="height:10px;width:10px;background:#3F85A9;  display: inline-table;"></div> Total Visitors&nbsp&nbsp
+                            <div style="height:10px;width:10px;background:#51E0C5;  display: inline-table;"></div> Official visits&nbsp&nbsp
+                            <div style="height:10px;width:10px;background:#48CA8A;  display: inline-table;"></div> Unofficial visits
                         </div>
                     </div>
                 </div>
@@ -435,7 +444,6 @@
     <!-- For Demo Charts -->
     <script src="assets/js/plugins/DevExpressChartJS/demo-charts.js"></script>
     <script src="assets/js/plugins/DevExpressChartJS/demo-vectorMap.js"></script>
-
     <script src="assets/js/google-maps/googlemap-conf.js"></script>
     <!-- Sparkline JS -->
     <script src="assets/js/plugins/sparkline/jquery.sparkline.min.js"></script>
