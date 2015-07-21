@@ -52,7 +52,7 @@
                   
                   <div class="dropdown user-login">
                   <button class="btn btn-xs dropdown-toggle btn-rounded" type="button" data-toggle="dropdown" aria-expanded="true">
->>>>>>> Stashed changes
+
                     <i class="fa fa-circle status-icon available"></i> Available <i class="fa fa-angle-down"></i>
                 </button>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
@@ -330,12 +330,27 @@
                             <h4>Vistors</h4>
                         </div>
                         <div class="panel-body">
-                            <ul class="list-group no-margn nicescroll todo-list" style="height:235px; overflow:auto;">
-                                <li data-ng-repeat="visitor in visitorList" class="list-group-item">
-                                    <span>{{ visitor.visitorName }} - {{ visitor.purposeOfVisit }}</span>
-                                </li>
-                            </ul>
-                            <div class="row" style="height:77px;background:#ECECEC;padding:4px">
+                            <div style="min-height:170px">
+                                <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="basic-datatable">
+                                    <thead>
+                                        <tr>
+                                            <th>Visitor</th>
+                                            <th>Purpose</th>
+                                            <th>Employee</th>
+                                            <th>Time</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-ng-repeat="visitor in visitorList" class="odd gradeX">
+                                            <td>{{ visitor.visitorName }}</td>
+                                            <td>{{ visitor.purposeOfVisit }}</td>
+                                            <td>{{ visitor.employeeName}}</td>
+                                            <td class="center">10 am</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="row" style="height:110px;background:#ECECEC;padding:10px">
                                 <div class="col-md-8">
                                     <a href="#middle">
                                         <h4 style="padding-top:12px;">Visitior Analytics</h4>
